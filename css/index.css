@@ -1,0 +1,169 @@
+@import url(href=https://fonts.googleapis.com/css?family=Montserrat:700,500|Fraunces:700);
+
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+
+
+}
+
+html {
+
+    background:
+        hsl(30, 38%, 92%);
+    /*hsl(220, 15%, 55%); */
+
+    display: flex;
+
+
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.IMGMobile {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 0;
+}
+
+/*MOBILE media_________________________________________________________*/
+
+.IMGDesktop {
+    display: none;
+}
+
+
+/*MOBILE format_________________________________________________________*/
+
+.card {
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+    background:
+        rgb(255, 255, 255);
+    width: 50vh;
+    height: auto;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 5px 10px 10px rgba(167, 143, 138, 0.184);
+
+}
+
+.text {
+
+    margin: 30px;
+
+}
+
+/*DESKTOP______________________________________________________________________________*/
+
+@media (min-width: 1000px) {
+
+
+
+
+    .IMGMobile {
+        display: none;
+    }
+
+    .card {
+
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        flex-direction: row;
+        background:
+            rgb(255, 255, 255);
+        width: 75vh;
+        height: 55vh;
+
+        border-radius: 15px;
+
+    }
+
+    .IMGDesktop {
+        height: 100%;
+        width: auto;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        display: block;
+    }
+
+
+
+    .text {
+
+        margin: 0px;
+
+    }
+
+}
+
+/*BUTTON_______________________________________________________*/
+#button {
+
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: row;
+
+    text-align: center;
+
+    margin-top: 13px;
+
+    padding-bottom: 15px;
+
+    padding-top: 5px;
+
+
+}
+
+.insidebtn {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: row;
+
+
+}
+
+
+#button:hover {
+    background-color: hsl(212, 21%, 14%);
+
+}
